@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EREST Band</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url('assets/header-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #000;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background-attachment: scroll;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        background-attachment: fixed;
+      }
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+    .gallery-grid {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .gallery-grid img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+    .album img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+      section {
+      margin: 2rem auto;
+      padding: 1rem 1.5rem;
+      max-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container" style="padding-left: 2rem; padding-right: 2rem; max-width: 100%; width: 100%; display: flex; justify-content: space-between; align-items: center;">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/logo-erest.png" alt="EREST Logo" style="height: 40px;">
+        </a>
+      </div>
+      <ul class="nav-links" style="display: flex; gap: 2rem; list-style: none;">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#music">Lagu</a></li>
+        <li><a href="#contact">Media Sosial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1 data-aos="fade-down">EREST</h1>
+      <p data-aos="fade-up">Band indie dari Kepulauan Riau</p>
+    </div>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>Tentang Kami</h2>
+    <p>EREST adalah band indie dari Kepulauan Riau yang mengusung gaya musik alternatif, rock, dan eksperimental. Kami berkarya sejak 2025 dengan semangat membawa suara lokal ke pentas nasional.</p>
+  </section>
+
+  <section id="music" data-aos="fade-up">
+    <h2>Lagu Kami</h2>
+    <div class="album-list">
+      <div class="album">
+        <img src="assets/duncan-shaffer-0JTDHPIjkHc-unsplash.jpg" alt="Single 1">
+        <h3>Hiruk Paripurna</h3>
+        <div class="audio-player">
+          <audio controls>
+            <source src="assets/Hirup Paripurna.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      </div>
+      <div class="album">
+        <img src="assets/yannis-papanastasopoulos-yWF2LLan-_o-unsplash.jpg" alt="Single 2">
+        <h3>Untukmu Ibu</h3>
+        <div class="audio-player">
+          <audio controls>
+            <source src="assets/Untukmu Ibu.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" data-aos="fade-up">
+    <h2>Galeri</h2>
+    <div class="gallery-grid">
+      <img src="assets/Screenshot 2025-07-14 115558.png" alt="Foto konser">
+      <img src="assets/Screenshot 2025-07-14 115950.png" alt="Latihan band">
+      <img src="assets/Screenshot 2025-07-14 120043.png" alt="Behind the scenes">
+    </div>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Media Sosial</h2>
+    <p>Ikuti kami di:</p>
+    <p>
+      <a href="https://instagram.com/erest_band" target="_blank">Instagram</a> |
+      <a href="https://youtube.com/@erestband" target="_blank">YouTube</a> |
+      <a href="mailto:erestband@gmail.com">Email</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EREST. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
